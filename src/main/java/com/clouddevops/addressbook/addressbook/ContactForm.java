@@ -29,7 +29,6 @@ public class ContactForm extends FormLayout {
     TextField lastName = new TextField("Last name");
     TextField phone = new TextField("Phone");
     TextField email = new TextField("Email");
-    TextField birthdate = new TextField("Birthdate");
 
     Contact contact;
 
@@ -59,7 +58,7 @@ public class ContactForm extends FormLayout {
 
         HorizontalLayout actions = new HorizontalLayout(save, cancel);
         actions.setSpacing(true);
-        addComponents(actions, firstName, lastName, phone, email, birthdate);
+        addComponents(actions, firstName, lastName, phone, email);
     
     }
 
